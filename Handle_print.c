@@ -43,7 +43,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 			return (1);
 		}
 		unknow_len += write(1, &fmt[*ind], 1);
-		return (unknow_len);
+		return (unknow_len); /* author collins and mutharimi */
 	}
 	return (printed_chars);
 }
